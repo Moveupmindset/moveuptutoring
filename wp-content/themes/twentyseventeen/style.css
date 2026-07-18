@@ -1768,6 +1768,31 @@ body:not(.title-tagline-hidden) .site-branding-text {
 		transform: none;
 		width: 100%;
 	}
+
+	/* Frame the tutor's face (eyebrows through smile) in the header on interior pages; front page keeps its centered crop. */
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+		-o-object-position: center 25%;
+		object-position: center 25%;
+	}
+}
+
+/* Interior pages: move the site title and tagline off the tutor and into the open
+   whiteboard space, with the text starting almost level with the whiteboard's left
+   border line. The title sits on the first line and the tagline on the second, each
+   on a single line. Applies on the desktop layout only; narrow screens keep the
+   default placement. */
+@media screen and (min-width: 48em) {
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .site-branding .wrap {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: none;
+		padding-left: 36vw;
+		padding-right: 2em;
+	}
+
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .site-branding-text {
+		max-width: none;
+	}
 }
 
 /* Hides div in Customizer preview when header images or videos change. */
