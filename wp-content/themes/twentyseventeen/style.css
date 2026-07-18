@@ -1774,6 +1774,18 @@ body:not(.title-tagline-hidden) .site-branding-text {
 		-o-object-position: center 25%;
 		object-position: center 25%;
 	}
+
+	/* On narrow (mobile) screens the front-page header is tall and full width, so the
+	   centered cover-crop cuts off both people's faces, which sit on the left of the
+	   photo. Shift the focal point left so the tutor and student stay visible. Scoped
+	   to the front page only; interior pages keep the crop set above. */
+	@media screen and (max-width: 47.9375em) {
+		.has-header-image.twentyseventeen-front-page .custom-header-media img,
+		.has-header-image.home.blog .custom-header-media img {
+			-o-object-position: 22% center;
+			object-position: 22% center;
+		}
+	}
 }
 
 /* Interior pages: move the site title and tagline off the tutor and into the open
