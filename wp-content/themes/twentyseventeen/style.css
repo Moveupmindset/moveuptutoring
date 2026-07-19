@@ -4410,3 +4410,27 @@ p > object:only-child {
 		padding: 0;
 	}
 }
+
+/* Custom footer layout: center the Session Location / Hours text and stack the
+   centered Move Up Tutoring logo underneath it on every page. */
+.site-footer .widget-area {
+	max-width: 640px;
+	margin: 0 auto;
+	text-align: center;
+}
+.site-footer .widget-area .widget-column.footer-widget-1,
+.site-footer .widget-area .widget-column.footer-widget-2 {
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+}
+.site-footer .widget-area .widget-column.footer-widget-1 {
+	margin-bottom: 2em;
+}
+.site-footer .widget-area .widget-title {
+	text-align: center;
+}
+.site-footer .widget-area .textwidget img {
+	display: block;
+	margin: 0 auto 0.75em;
+}
