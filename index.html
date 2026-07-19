@@ -160,8 +160,8 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 		<svg class="icon icon-bars" aria-hidden="true" role="img"> <use href="#icon-bars" xlink:href="#icon-bars"></use> </svg><svg class="icon icon-close" aria-hidden="true" role="img"> <use href="#icon-close" xlink:href="#icon-close"></use> </svg>Menu	</button>
 
 	<div class="menu-main-container"><ul id="top-menu" class="menu"><li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12 current_page_item menu-item-64"><a href="" aria-current="page">Welcome to Move Up!</a></li>
-<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="about/">About</a></li>
 <li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="testimonials/">Testimonials</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="about/">About</a></li>
 <li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a href="pricing/">Pricing</a></li>
 <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="contact/">Contact (541) 583-0030</a></li>
 </ul></div>
@@ -228,21 +228,26 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 
-<ol class="wp-block-list" style="text-align:left;width:fit-content;margin-left:auto;margin-right:auto;margin-bottom:0">
-<li>Customized learning that focuses on their immediate learning needs,</li>
-
-
-
-<li>Alignment of activities to current classroom activities,</li>
-
-
-
-<li>More engagement, rapid feedback, and less distractions, and</li>
-
-
-
-<li>Meaningful mentoring from a highly qualified and caring tutor.</li>
-</ol>
+<style>
+.moveup-benefits-desktop{display:none}
+.moveup-benefits-mobile{display:block}
+.moveup-benefits-mobile img,.moveup-benefits-desktop img{display:block;width:100%;height:auto;margin:0 auto}
+.moveup-benefits-mobile img{margin-bottom:0.9em}
+.moveup-benefits-mobile img:last-child{margin-bottom:0}
+@media (min-width:768px){
+.moveup-benefits-desktop{display:block}
+.moveup-benefits-mobile{display:none}
+}
+</style>
+<figure class="wp-block-image size-large is-style-default moveup-benefits-desktop">
+<img decoding="async" src="wp-content/uploads/2025/11/tutoring-benefits-overview.png" alt="Customized learning focused on immediate needs, alignment of activities to current classroom activities, more engagement with rapid feedback and less distractions, and meaningful mentoring from a highly qualified and caring tutor">
+</figure>
+<div class="moveup-benefits-mobile">
+<img decoding="async" src="wp-content/uploads/2025/11/benefit-customized-learning.png" alt="Customized learning that focuses on their immediate learning needs">
+<img decoding="async" src="wp-content/uploads/2025/11/benefit-classroom-alignment.png" alt="Alignment of activities to current classroom activities">
+<img decoding="async" src="wp-content/uploads/2025/11/benefit-engagement-feedback.png" alt="More engagement, rapid feedback, and less distractions">
+<img decoding="async" src="wp-content/uploads/2025/11/benefit-mentoring.png" alt="Meaningful mentoring from a highly qualified and caring tutor">
+</div>
 			</div><!-- .entry-content -->
 
 		</div><!-- .wrap -->
