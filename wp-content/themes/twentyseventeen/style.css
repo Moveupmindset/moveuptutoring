@@ -4434,3 +4434,24 @@ p > object:only-child {
 	display: block;
 	margin: 0 auto 0.75em;
 }
+
+/* Desktop: tighten the gap between the page content and the footer, and the
+   gap between the Hours text and the logo. Mobile spacing is left unchanged. */
+@media screen and (min-width: 48em) {
+	.site-footer {
+		margin-top: 0.5em;
+	}
+	.site-footer .wrap {
+		padding-top: 0.75em;
+	}
+	.site-footer .widget-area {
+		padding-top: 0.5em;
+		padding-bottom: 1em;
+	}
+	.site-footer .widget-area .widget-column.footer-widget-1 {
+		margin-bottom: 0;
+	}
+	.site-footer .widget-area .widget-column.footer-widget-1 .textwidget > *:last-child {
+		margin-bottom: 0;
+	}
+}
